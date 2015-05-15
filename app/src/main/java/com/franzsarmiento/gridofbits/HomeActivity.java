@@ -42,6 +42,10 @@ public class HomeActivity extends Activity {
         setContentView(R.layout.activity_home);
     }
 
+    public void btnNormalModeOnClick(View view) {
+        setContentView(R.layout.normal_home);
+    }
+
     public void btnPlayEasyOnClick(View view) {
         Intent intent = new Intent(this, GameActivity.class);
         intent.putExtra(GameActivity.SELECTED_DIFFICULTY, GameActivity.DIFFICULTY_EASY);
@@ -61,6 +65,32 @@ public class HomeActivity extends Activity {
     }
 
     public void btnBestTimesOnClick(View view) {
+        startActivity(new Intent(this, BestTimesActivity.class));
+    }
+
+    public void btnRapidFireModeOnClick(View view) {
+        setContentView(R.layout.rapid_fire_home);
+    }
+
+    public void btnPlayRapidFireEasyOnClick(View view) {
+        Intent intent = new Intent(this, GameActivity.class);
+        intent.putExtra(RapidFireGameActivity.SELECTED_DIFFICULTY, RapidFireGameActivity.DIFFICULTY_EASY);
+        startActivity(intent);
+    }
+
+    public void btnPlayRapidFireMediumOnClick(View view) {
+        Intent intent = new Intent(this, GameActivity.class);
+        intent.putExtra(RapidFireGameActivity.SELECTED_DIFFICULTY, RapidFireGameActivity.DIFFICULTY_MEDIUM);
+        startActivity(intent);
+    }
+
+    public void btnPlayRapidFireHardOnClick(View view) {
+        Intent intent = new Intent(this, GameActivity.class);
+        intent.putExtra(RapidFireGameActivity.SELECTED_DIFFICULTY, RapidFireGameActivity.DIFFICULTY_HARD);
+        startActivity(intent);
+    }
+
+    public void btnBestRapidFireTimesOnClick(View view) {
         startActivity(new Intent(this, BestTimesActivity.class));
     }
 

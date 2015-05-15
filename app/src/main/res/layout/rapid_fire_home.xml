@@ -16,19 +16,25 @@
         android:gravity="center">
 
         <Button style="@style/default_base_button"
-            android:id="@+id/btnNormalMode"
-            android:text="@string/normal_mode"
-            android:onClick="btnNormalModeOnClick" />
+            android:id="@+id/btnRapidFireEasy"
+            android:text="@string/rapid_fire_easy"
+            android:onClick="btnPlayRapidFireEasyOnClick" />
 
         <Button style="@style/default_base_button"
-            android:id="@+id/btnRapidFire"
-            android:text="@string/rapid_fire"
-            android:onClick="btnRapidFireModeOnClick" />
+            android:id="@+id/btnRapidFireMedium"
+            android:text="@string/rapid_fire_medium"
+            android:onClick="btnPlayRapidFireMediumOnClick" />
 
         <Button style="@style/default_base_button"
-            android:text="@string/how_to_play"
-            android:id="@+id/btnHowToPlay"
-            android:onClick="btnHowToPlayOnClick" />
+            android:id="@+id/btnRapidFireHard"
+            android:text="@string/rapid_fire_hard"
+            android:onClick="btnPlayRapidFireHardOnClick" />
+
+        <Button style="@style/default_base_button"
+            android:text="@string/best_times"
+            android:id="@+id/btnBestTimes"
+            android:onClick="btnBestRapidFireTimesOnClick" />
+
 
     </LinearLayout>
 
